@@ -1,6 +1,6 @@
 package org.wgcisotto;
 
-import org.wgcisotto.basics.Threads.CustomThread;
+import org.wgcisotto.basics.threads.CustomThread;
 
 public class CustomThreadMain {
 

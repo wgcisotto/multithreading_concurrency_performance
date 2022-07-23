@@ -18,7 +18,6 @@ public class LongComputationTask implements Runnable {
 
     private BigInteger pow(BigInteger base, BigInteger power) {
         BigInteger result = BigInteger.ONE;
-
         for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteger.ONE)) {
             //even that we interrupted the thread this still running until finish the computation
             if (Thread.currentThread().isInterrupted()) { // if thread daemon true no need to add it here.
@@ -27,7 +26,6 @@ public class LongComputationTask implements Runnable {
             }
             result = result.multiply(base);
         }
-
         return result;
     }
 }

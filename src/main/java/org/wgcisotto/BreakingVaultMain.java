@@ -1,8 +1,8 @@
 package org.wgcisotto;
 
-import org.wgcisotto.basics.Threads.AscendingHackerThread;
-import org.wgcisotto.basics.Threads.DescendingHackerThread;
-import org.wgcisotto.basics.Threads.PoliceThread;
+import org.wgcisotto.basics.threads.AscendingHackerThread;
+import org.wgcisotto.basics.threads.DescendingHackerThread;
+import org.wgcisotto.basics.threads.PoliceThread;
 import org.wgcisotto.basics.models.Vault;
 
 import java.util.ArrayList;

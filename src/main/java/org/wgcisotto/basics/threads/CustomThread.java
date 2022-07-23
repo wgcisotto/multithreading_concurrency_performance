@@ -1,4 +1,4 @@
-package org.wgcisotto.basics.Threads;
+package org.wgcisotto.basics.threads;
 
 public class CustomThread extends Thread {
 
