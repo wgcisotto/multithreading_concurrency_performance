@@ -16,12 +16,12 @@ public class ComplexCalculation {
             thread.setDaemon(true);
             thread.start();
         }
-        try {
-            for (Thread thread: threads) {
+        for (Thread thread: threads) {
+            try {
                 thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
 
         return thread1.getResult().add(thread2.getResult());
